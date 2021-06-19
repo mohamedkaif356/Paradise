@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Paradise</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore">Explore</string>
+    <string name="add_post">Add post</string>
+    <string name="all">All</string>
+    <string name="favourite">Favourite</string>
+    <string name="recent">Recent</string>
+    <string name="title">Title</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="enter_a_title">Enter a Title</string>
+    <string name="description">Description</string>
+    <string name="select_location">Search Location </string>
+    <string name="date">Date</string>
+    <string name="save_image">Save_image</string>
+    <string name="cancle_image">Cancel image</string>
+    <string name="cancel_image">cancel_image</string>
+    <string name="get_current_location">Get current location</string>
+</resources>
