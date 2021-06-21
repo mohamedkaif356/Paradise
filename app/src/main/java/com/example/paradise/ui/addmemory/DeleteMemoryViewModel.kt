@@ -7,9 +7,9 @@ import com.example.paradise.data.MemoriesTable
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-abstract class AddMemoryViewModel(private val repository: MemoriesRepository) : ViewModel() {
+abstract class deleteMemoryViewModel(private val repository: MemoriesRepository) : ViewModel() {
 
-    fun insertMemories(memory: MemoriesTable) = viewModelScope.launch(Dispatchers.IO) {
-        repository.insert(memory)
+    fun deletememory(memory: MemoriesTable) = viewModelScope.launch(Dispatchers.IO) {
+        repository.delete(memory)
     }
 }
