@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/homescreen"
-        android:name="com.example.paradise.Homescreen"
+        android:name="com.example.paradise.ui.allmemories.Homescreen"
         android:label="fragment_homescreen"
         tools:layout="@layout/fragment_homescreen" />
     <fragment
         android:id="@+id/userprofile"
-        android:name="com.example.paradise.Userprofile"
+        android:name="com.example.paradise.ui.favoritememories.FavoriteMemories"
         android:label="fragment_userprofile"
         tools:layout="@layout/fragment_userprofile" />
     <fragment

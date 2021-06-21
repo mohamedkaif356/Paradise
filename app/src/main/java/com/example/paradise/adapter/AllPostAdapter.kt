@@ -1,10 +1,12 @@
-package com.example.paradise
+package com.example.paradise.adapter
 
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.paradise.R
+import com.example.paradise.data.MemoriesTable
 import kotlinx.android.synthetic.main.rv_all_post.view.*
 
 class AllPostAdapter() :
@@ -21,7 +23,7 @@ class AllPostAdapter() :
 
         }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AllPostAdapter.MemoriesViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MemoriesViewHolder {
         return MemoriesViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.rv_all_post, parent, false))
     }
 

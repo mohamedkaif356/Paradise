@@ -1,4 +1,4 @@
-package com.example.paradise
+package com.example.paradise.ui.addmemory
 
 import android.Manifest
 import android.app.Activity
@@ -15,6 +15,9 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.example.paradise.R
+import com.example.paradise.data.MemoriesTable
+import com.example.paradise.ui.allmemories.MemoriesViewModel
 import kotlinx.android.synthetic.main.activity_add_memories2.*
 import java.text.SimpleDateFormat
 import java.util.*

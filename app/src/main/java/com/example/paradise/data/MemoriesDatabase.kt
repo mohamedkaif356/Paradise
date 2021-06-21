@@ -1,4 +1,4 @@
-package com.example.paradise
+package com.example.paradise.data
 
 import android.content.Context
 import androidx.room.Database
@@ -23,7 +23,7 @@ abstract class MemoriesDatabase : RoomDatabase() {
 
         }
 
-        fun getDatabase(context : Context) : MemoriesDatabase{
+        fun getDatabase(context : Context) : MemoriesDatabase {
 
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(

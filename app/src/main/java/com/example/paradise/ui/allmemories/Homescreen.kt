@@ -1,4 +1,4 @@
-package com.example.paradise
+package com.example.paradise.ui.allmemories
 
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +10,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.paradise.adapter.AllPostAdapter
+import com.example.paradise.R
 
 
 class Homescreen : Fragment() {
