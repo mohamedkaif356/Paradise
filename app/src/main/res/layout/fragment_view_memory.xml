@@ -4,6 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.viewmemory.ViewMemory">
+    tools:context=".ui.allmemories.ViewMemoryFragment">
+
+    <ImageView
+        android:id="@+id/iv_details_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@
         android:id="@+id/cv_open_memories"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:cardCornerRadius="25dp"
+        app:cardCornerRadius="10dp"
         android:layout_margin="10dp"
         android:elevation="0dp">
 
@@ -21,7 +21,7 @@
             android:textColor="@color/Red"
             android:fontFamily="@font/poppins_medium"
             android:textSize="20sp"
-            android:scaleType="centerCrop"/>
+            android:scaleType="fitXY"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 tools:text="New Zealand"
-                android:textSize="20sp"
+                android:textSize="14sp"
                 android:fontFamily="@font/poppins_medium"/>
 
             <TextView
@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Remember that we had a crazy time over here and there with perfect weather and nature"
-                android:textSize="18sp"
+                android:textSize="12sp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_light"/>
 

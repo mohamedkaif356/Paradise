@@ -13,7 +13,7 @@ class FavoriteMemories : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_userprofile, container, false)
+        return inflater.inflate(R.layout.fragment_favourite, container, false)
     }
 
 

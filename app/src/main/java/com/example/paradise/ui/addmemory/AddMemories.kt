@@ -18,7 +18,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.paradise.R
 import com.example.paradise.data.MemoriesTable
 import com.example.paradise.ui.allmemories.MemoriesViewModel
-import kotlinx.android.synthetic.main.activity_add_memories2.*
+import kotlinx.android.synthetic.main.activity_add_memories.*
 import java.text.SimpleDateFormat
 import java.util.*
 import com.karumi.dexter.Dexter
@@ -39,9 +39,9 @@ class AddMemories : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_memories2)
+        setContentView(R.layout.activity_add_memories)
 
-        dateSetListener = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
+        dateSetListener = DatePickerDialog.OnDateSetListener { _, year, month, dayOfMonth ->
             cal.set(Calendar.YEAR , year)
             cal.set(Calendar.MONTH, month)
             cal.set(Calendar.DAY_OF_MONTH, dayOfMonth)
@@ -106,7 +106,7 @@ class AddMemories : AppCompatActivity(), View.OnClickListener {
                     else ->{
 
                         val viewModel = ViewModelProvider(this).get(MemoriesViewModel::class.java)
-                        viewModel.insertMemories(MemoriesTable(et_user_title.text.toString(),
+                        viewModel.insertMemories(MemoriesTable(0,et_user_title.text.toString(),
                                 et_user_desc.text.toString(), et_user_date.text.toString(),
                                 path.toString(), et_user_location.text.toString()))
                         finish()

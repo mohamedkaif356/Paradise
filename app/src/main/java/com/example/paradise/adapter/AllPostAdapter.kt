@@ -4,12 +4,14 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.paradise.R
 import com.example.paradise.data.MemoriesTable
+import com.example.paradise.ui.allmemories.HomescreenDirections
 import kotlinx.android.synthetic.main.rv_all_post.view.*
 
-class AllPostAdapter() :
+class AllPostAdapter :
     RecyclerView.Adapter<AllPostAdapter.MemoriesViewHolder>() {
 
     private val allmemories = ArrayList<MemoriesTable>()
@@ -33,13 +35,17 @@ class AllPostAdapter() :
         holder.desc.text = currentMemory.description
         holder.image.clipToOutline = true
         holder.image.setImageURI(Uri.parse(currentMemory.img))
+        holder.openmemories.setOnClickListener {
+            val action = HomescreenDirections.actionHomescreenToViewMemoryFragment(currentMemory)
+            holder.itemView.findNavController().navigate(action)
+        }
     }
 
     override fun getItemCount(): Int {
         return allmemories.count()
     }
 
-    public fun updateMemories(newMemory: List<MemoriesTable>){
+    fun updateMemories(newMemory: List<MemoriesTable>){
 
         allmemories.clear()
         allmemories.addAll(newMemory)

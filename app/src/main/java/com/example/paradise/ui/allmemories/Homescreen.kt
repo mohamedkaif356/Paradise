@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.paradise.adapter.AllPostAdapter
@@ -22,22 +23,20 @@ class Homescreen : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        Log.i("Mohamed", "Hello")
-
         val view =  inflater.inflate(R.layout.fragment_homescreen, container, false)
 
         val adapter = AllPostAdapter()
         val allpostrv = view.findViewById<RecyclerView>(R.id.all_post_rv)
         allpostrv.adapter = adapter
-        allpostrv.layoutManager = LinearLayoutManager(context)
+        allpostrv.layoutManager = GridLayoutManager(context, 2)
 
 
         val viewModel = ViewModelProvider(requireActivity()).get(MemoriesViewModel::class.java)
 
 
-        viewModel.allMemories.observe(viewLifecycleOwner, Observer {
+        viewModel.allMemories.observe({lifecycle}){
             adapter.updateMemories(it)
-        })
+        }
 
         return view
     }

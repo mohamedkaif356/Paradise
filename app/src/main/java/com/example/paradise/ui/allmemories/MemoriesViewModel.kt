@@ -25,4 +25,8 @@ class MemoriesViewModel(application: Application) : AndroidViewModel(application
         repository.insert(memory)
     }
 
+    fun deleteMemories(memory: MemoriesTable) = viewModelScope.launch(Dispatchers.IO) {
+        repository.delete(memory)
+    }
+
 }
