@@ -34,7 +34,7 @@
                 android:id="@+id/memories_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 tools:text="New Zealand"
                 android:textSize="14sp"
                 android:fontFamily="@font/poppins_medium"/>
@@ -44,9 +44,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Remember that we had a crazy time over here and there with perfect weather and nature"
-                android:textSize="12sp"
-                android:textColor="@color/black"
-                android:fontFamily="@font/poppins_light"/>
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_regular"/>
 
         </LinearLayout>
 

@@ -9,27 +9,10 @@
         android:id="@+id/homescreen"
         android:name="com.example.paradise.ui.allmemories.Homescreen"
         android:label="fragment_homescreen"
-        tools:layout="@layout/fragment_homescreen" >
-        <action
-            android:id="@+id/action_homescreen_to_viewMemoryFragment"
-            app:destination="@id/viewMemoryFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_homescreen" />
     <fragment
         android:id="@+id/userprofile"
         android:name="com.example.paradise.ui.favoritememories.FavoriteMemories"
         android:label="fragment_userprofile"
         tools:layout="@layout/fragment_favourite" />
-    <fragment
-        android:id="@+id/viewMemoryFragment"
-        android:name="com.example.paradise.ui.allmemories.ViewMemoryFragment"
-        android:label="fragment_view_memory"
-        tools:layout="@layout/fragment_view_memory" >
-        <action
-            android:id="@+id/nav_viewMemoryFragment_to_homescreen"
-            app:destination="@id/homescreen" />
-        <argument
-            android:name="currentMemory"
-            app:argType="com.example.paradise.data.MemoriesTable" />
-
-    </fragment>
 </navigation>

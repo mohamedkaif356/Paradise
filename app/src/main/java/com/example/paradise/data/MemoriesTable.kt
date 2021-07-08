@@ -5,10 +5,10 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.android.parcel.Parcelize
+import java.io.Serializable
 
-@Parcelize
 @Entity(tableName = "memories_table")
-class MemoriesTable(
+data class MemoriesTable(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     @ColumnInfo(name = "Title") val title: String,
@@ -16,5 +16,5 @@ class MemoriesTable(
     @ColumnInfo(name = "date") val date: String,
     @ColumnInfo(name = "image") val img: String,
     @ColumnInfo(name = "location") val location: String?
-) : Parcelable
+) : Serializable
 

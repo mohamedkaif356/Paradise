@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Paradise">
-        <activity android:name=".ui.viewmemory.ViewMemory"></activity>
+        <activity android:name=".ui.allmemories.ViewMemoryActivity"/>
         <activity android:name=".ui.addmemory.AddMemories" />
         <activity android:name=".MainActivity">
             <intent-filter>
