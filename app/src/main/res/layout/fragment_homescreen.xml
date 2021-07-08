@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.allmemories.Homescreen"
-    android:padding="10dp">
+    android:padding="15dp">
 
     <TextView
         android:id="@+id/textView"

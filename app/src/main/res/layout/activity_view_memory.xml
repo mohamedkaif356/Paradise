@@ -8,24 +8,74 @@
     android:background="@color/black">
 
     <ImageView
-        android:id="@+id/iv_detail"
+        android:id="@+id/iv_detail_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background"
-        android:scaleType="centerInside"/>
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@drawable/background" />
 
     <TextView
         android:id="@+id/tv_details_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="100dp"
-        android:text="TextView"
+        android:fontFamily="@font/poppins_medium"
+        android:maxWidth="250dp"
+        android:textColor="@color/white"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_details_description"
+        app:layout_constraintStart_toStartOf="@+id/tv_details_description"
+        tools:text="Chill out with friends" />
+
+    <TextView
+        android:id="@+id/tv_details_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingBottom="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_details_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_details_title"
+        tools:text="14/05/2020" />
+
+    <TextView
+        android:id="@+id/tv_details_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_details_location"
+        app:layout_constraintStart_toStartOf="@+id/tv_details_location"
+        tools:text="Had a great time" />
+
+    <TextView
+        android:id="@+id/tv_details_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_delete_memory"
+        app:layout_constraintStart_toStartOf="@+id/btn_delete_memory"
+        tools:text="Panhala" />
+
+    <ImageView
+        android:id="@+id/btn_delete_memory"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/delete"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
