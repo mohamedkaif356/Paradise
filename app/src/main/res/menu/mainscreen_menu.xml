@@ -8,5 +8,5 @@
 
     <item android:title=""
         android:id="@+id/userprofile"
-        android:icon="@drawable/add_user"/>
+        android:icon="@drawable/heart"/>
 </menu>

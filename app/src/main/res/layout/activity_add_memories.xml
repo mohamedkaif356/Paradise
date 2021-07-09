@@ -20,8 +20,9 @@
                 android:id="@+id/iv_add_image"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/background"/>
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                android:src="@drawable/addimage"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
