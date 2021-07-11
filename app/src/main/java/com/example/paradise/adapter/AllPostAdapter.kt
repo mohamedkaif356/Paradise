@@ -27,12 +27,11 @@ class AllPostAdapter(val context: Context) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MemoriesViewHolder {
-        val view = MemoriesViewHolder(
+
+        return MemoriesViewHolder(
             LayoutInflater.from(parent.context)
                 .inflate(R.layout.rv_all_post, parent, false)
         )
-
-        return view
     }
 
     override fun onBindViewHolder(holder: MemoriesViewHolder, position: Int) {

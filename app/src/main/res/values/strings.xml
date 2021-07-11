@@ -17,4 +17,9 @@
     <string name="cancle_image">Cancel image</string>
     <string name="cancel_image">cancel_image</string>
     <string name="get_current_location">Get current location</string>
+    <string name="save">Save</string>
+    <string name="select_image">Select Image</string>
+    <string name="logo_image">Logo Image</string>
+    <string name="selected_image">Selected Image</string>
+    <string name="delete_button">Delete Button</string>
 </resources>

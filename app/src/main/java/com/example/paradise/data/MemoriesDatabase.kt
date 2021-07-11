@@ -16,7 +16,7 @@ abstract class MemoriesDatabase : RoomDatabase() {
 
         private var INSTANCE: MemoriesDatabase? = null
 
-        val migration_1_2: Migration = object: Migration(1 ,2){
+        private val migration_1_2: Migration = object: Migration(1 ,2){
             override fun migrate(database: SupportSQLiteDatabase) {
                 database.execSQL("ALTER TABLE memories_table ADD COLUMN location TEXT DEFAULT ''")
             }

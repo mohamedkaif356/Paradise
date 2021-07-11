@@ -22,7 +22,8 @@
             android:textColor="@color/Red"
             android:fontFamily="@font/poppins_medium"
             android:textSize="20sp"
-            android:scaleType="fitXY"/>
+            android:scaleType="fitXY"
+            android:contentDescription="@string/selected_image" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Remember that we had a crazy time over here and there with perfect weather and nature"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 android:textColor="@color/white"
                 android:fontFamily="@font/poppins_regular"/>
 

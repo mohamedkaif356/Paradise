@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.paradise.R
 import com.example.paradise.adapter.AllPostAdapter
+import com.example.paradise.data.FavouriteTable
 import com.example.paradise.data.MemoriesTable
 import kotlinx.android.synthetic.main.activity_view_memory.*
 
@@ -35,8 +36,14 @@ class ViewMemoryActivity : AppCompatActivity() {
             tv_details_location.text = currentMemory.location
         }
 
+        viewModel.insertFavourite(FavouriteTable(0, currentMemory!!.id, currentMemory.title, currentMemory.description, currentMemory.date, currentMemory.img, currentMemory.location))
+
+        viewModel.allFavourite.observe({lifecycle}){
+            Log.i("Favourite Memory", it.toString())
+        }
+
         btn_delete_memory.setOnClickListener {
-            viewModel.deleteMemories(currentMemory!!)
+            viewModel.deleteMemories(currentMemory)
             Toast.makeText(this, "Memory Deleted successfully", Toast.LENGTH_SHORT).show()
             finish()
         }
