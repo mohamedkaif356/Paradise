@@ -34,4 +34,8 @@ class MemoriesViewModel(application: Application) : AndroidViewModel(application
         repository.favInsert(favourite)
     }
 
+    fun deleteFavourite(favourite: FavouriteTable) = viewModelScope.launch(Dispatchers.IO) {
+        repository.favDelete(favourite)
+    }
+
 }

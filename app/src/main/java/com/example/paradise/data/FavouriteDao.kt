@@ -6,7 +6,7 @@ import androidx.room.*
 @Dao
 interface FavouriteDao {   
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertmemory(memory : FavouriteTable)
 
     @Delete
@@ -14,4 +14,5 @@ interface FavouriteDao {
 
     @Query("Select * from favourite_table order by id ASC")
     fun showallmemories() : LiveData<List<FavouriteTable>>
+
 }

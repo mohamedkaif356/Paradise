@@ -21,7 +21,7 @@ abstract class FavouriteDatabase : RoomDatabase() {
                     context.applicationContext,
                     FavouriteDatabase::class.java,
                     "favourite_database"
-                ).build()
+                ).fallbackToDestructiveMigration().build()
                 INSTANCE = instance
                 instance
             }

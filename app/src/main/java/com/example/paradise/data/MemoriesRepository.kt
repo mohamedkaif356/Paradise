@@ -23,4 +23,8 @@ class MemoriesRepository(private val memoriesDao : MemoriesDao, private val favo
         favouriteDao.insertmemory(favourite)
     }
 
+    suspend fun favDelete(favourite: FavouriteTable){
+        favouriteDao.deletmemory(favourite)
+    }
+
 }
