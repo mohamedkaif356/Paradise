@@ -26,7 +26,7 @@ class SplashScreenActivity : AppCompatActivity() {
         delay(200)
         val text = findViewById<TextView>(R.id.tv_splash_screen)
         text.animate().alpha(1f).duration = 500L
-        delay(1000)
+        delay(500)
         iv_splash_screen_logo.animate().alpha(0f).duration = 500L
         delay(200)
         tv_splash_screen.animate().alpha(0f).duration = 500L
